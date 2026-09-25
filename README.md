@@ -84,7 +84,7 @@ APP_URL=http://localhost:8000
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=job_tracker
+DB_DATABASE=day_code_job_tracker
 DB_USERNAME=root
 DB_PASSWORD=
 ```
