@@ -92,7 +92,7 @@ DB_PASSWORD=
 ### 3. Create Database
 
 ```bash
-mysql -u root -p -e "CREATE DATABASE job_tracker;"
+mysql -u root -p -e "CREATE DATABASE day_code_job_tracker;"
 ```
 
 ### 4. Run Migrations
