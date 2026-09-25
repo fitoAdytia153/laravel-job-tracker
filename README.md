@@ -284,37 +284,6 @@ Search & replace across Blade files:
 
 ---
 
-## 🐛 Troubleshooting
-
-### Blank / white page on `/`
-- Check `storage/logs/laravel.log`
-- Set `APP_DEBUG=true` in `.env`, then run `php artisan config:clear`
-- Ensure all partials exist (`_stats`, `_table`, `_ajax`)
-
-### Date picker doesn't open
-- Make sure the input has the `date-picker` class
-- Verify in Console: `document.getElementById('date-filter')._flatpickr`
-
-### AJAX filter not working
-- Open Network tab → confirm request with `?ajax=1` is sent
-- Confirm controller returns partial when `$request->ajax()`
-- Confirm `_ajax.blade.php` exists
-
-### Edit modal date field is empty
-- Must use `editDatePicker.setDate(value, true)` — **not** `.value = ...`
-- This is required because Flatpickr uses `altInput: true`
-
-### 404 on Delete
-- The record may have been deleted in another session
-- Refresh the page first
-
-### Data not updating after CRUD
-- Check the AJAX response in the Network tab
-- Ensure `loadTable()` is called after successful submit
-- Ensure `#stats-wrapper` is also being replaced
-
----
-
 ## 📝 Changelog
 
 ### v1.1.0
@@ -353,8 +322,8 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
+- GitHub: [@fitoAdytia153](https://github.com/fitoAdytia1533)
+- Email: fitoadytia153@gmail.com
 
 ---
 
@@ -363,4 +332,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 - [Laravel](https://laravel.com)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Flatpickr](https://flatpickr.js.org)
-- [Shields.io](https://shields.io) for badges
